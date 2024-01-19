@@ -22,19 +22,21 @@
 
 //funciones
 
-//let nombre = "Matthy";
-//let ciudad = "Cosquin";
-//let gusto = "futbol";
+let nombres = "Matthy";
+let ciudad = "Cordoba";
+let gusto = "futbol";
 
-//function cambiarTexto(nombre, ciudad, gusto) {
-//    let contenido = ` Soy ${nombre} tengo 33 años y vivo en ${ciudad},
-//    me gusta mucho el ${gusto}, la tecnologia, los juegos Online
-//    y aprender sobre las nuevas tecnologias.`;
+function cambiarTexto(nombres, ciudad, gusto) {
+    let contenido = `Hola! mi nombre es ${nombres} soy de ${ciudad},
+                     me gusta mucho el ${gusto}, la tecnologia,
+                     los juegos Online y poner en practica todo
+                     lo que voy aprendiendo en el camino de el
+                     desarrollo de sitios web.`;
 
-//    return contenido;
-//}
-//let parrafo = document.querySelector(".cont .parrafo p");
-//parrafo.innerText = cambiarTexto(nombre, ciudad, gusto);
+    return contenido;
+}
+let parrafo = document.querySelector(".cont p");
+parrafo.innerText = cambiarTexto(nombres, ciudad, gusto);
 
 //navbar
 
@@ -47,12 +49,12 @@ menu_responsive.onclick = function () {
 //formulario
 const form = document.getElementById("form");
 const nombre = document.getElementById("nombre");
-const parrafo = document.getElementById("alertas");
+const parraf = document.getElementById("alertas");
 
 function validarFormulario() {
     let warnings = "";
     let valido = true;
-    parrafo.innerHTML = "";
+    parraf.innerHTML = "";
 
     if (nombre.value.length < 4) {
         warnings += `El nombre debe contener más de 4 carcateres`;
@@ -60,9 +62,9 @@ function validarFormulario() {
     }
 
     if (!valido) {
-        parrafo.innerHTML = warnings;
+        parraf.innerHTML = warnings;
     } else {
-        parrafo.innerHTML = "Enviado";
+        parraf.innerHTML = "Enviado";
     }
     return valido;
 }

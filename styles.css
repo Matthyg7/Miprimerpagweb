@@ -1,4 +1,6 @@
 :root {
+    --color-presentacion:#AF7AC5;
+    --colorh1:#af0576;
     --section-principal-color: #f882d1;
     --primary-color: #4f4aa6;
     --secondary-color: #48ca95;
@@ -201,6 +203,19 @@ header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.greeting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0px 20px;
+    padding:0px 15px;
+    border: 3px solid var(--colorh1);
+}
+.greeting p{
+    font-size: 35px;
+    color: var(--color-presentacion);
 }
 
 .titulo1 img {
@@ -632,6 +647,19 @@ header nav {
         flex-wrap: wrap;
         justify-content: space-around;
         align-content: space-around;
+    }
+    .greeting{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0px 10px 0px 20px;
+        padding:0px 15px;
+        border: 3px solid var(--colorh1);
+    }
+    .greeting p{
+        font-size: 25px;
+        color: var(--color-presentacion);
     }
 
     .titulo1 img {
